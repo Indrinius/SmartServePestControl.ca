@@ -498,7 +498,7 @@ footer a:hover{color:#fff}
   </div>
   <div>
    <div class="eyebrow">Request a quote</div><h2>Tell us what you need.</h2>
-   <form id="quoteForm">
+   <form id="quoteForm" action="https://formspree.io/f/xaewkjod" method="POST">
     <input required name="name" placeholder="Full name">
     <input name="company" placeholder="Company name">
     <input required type="email" name="email" placeholder="Email">
@@ -526,21 +526,6 @@ footer a:hover{color:#fff}
 </footer>
 
 <script>
-document.getElementById('quoteForm').addEventListener('submit', function(e){
- e.preventDefault();
- const data = new FormData(this);
- const subject = encodeURIComponent('SmartServe Pest Control - Quote Request');
- const body = encodeURIComponent(
-   'Name: '+(data.get('name')||'')+'\\n'+
-   'Company: '+(data.get('company')||'')+'\\n'+
-   'Email: '+(data.get('email')||'')+'\\n'+
-   'Phone: '+(data.get('phone')||'')+'\\n'+
-   'Service: '+(data.get('type')||'')+'\\n'+
-   'City/Area: '+(data.get('city')||'')+'\\n\\n'+
-   (data.get('message')||'')
- );
- window.location.href='mailto:smartserve.pest.control@gmail.com?subject='+subject+'&body='+body;
-});
 </script>
 </body>
 </html>
