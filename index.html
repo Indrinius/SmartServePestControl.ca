@@ -48,7 +48,7 @@ button,input,select,textarea{font:inherit}
 
 .hero{min-height:100vh;display:flex;align-items:center;color:#fff;position:relative;overflow:hidden;background:
 linear-gradient(90deg,rgba(7,27,21,.92) 0%,rgba(7,27,21,.67) 42%,rgba(7,27,21,.25) 76%,rgba(7,27,21,.12) 100%),
-url("https://unsplash.com/photos/GDbwG7ziHYM/download?force=true") center/cover no-repeat;
+url("https://unsplash.com/photos/skPBAPVgt4o/download?force=true") center/cover no-repeat;
 background-attachment:fixed}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:35%;background:linear-gradient(transparent,rgba(7,27,21,.5));pointer-events:none}
 .hero-content{position:relative;z-index:2;padding:145px 0 110px;max-width:900px}
@@ -136,7 +136,7 @@ section{padding:105px 0}
 .area-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
 .area-visual{min-height:430px;border-radius:32px;overflow:hidden;position:relative;background:
 linear-gradient(135deg,rgba(12,55,42,.25),rgba(12,55,42,.72)),
-url("https://unsplash.com/photos/tVRloZUKuVI/download?force=true") center/cover}
+url("https://unsplash.com/photos/wupJ9wHfNEc/download?force=true") center/cover}
 .area-visual-inner{position:absolute;inset:0;padding:35px;display:flex;flex-direction:column;justify-content:end;color:#fff}
 .area-visual h3{font-size:2.5rem;line-height:1;margin:0 0 10px}
 .area-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
@@ -201,7 +201,45 @@ footer{background:#0b241c;color:#dbe5df;padding:55px 0 25px}
   .photo-card,.photo-card img{min-height:390px;height:390px}.photo-overlay{padding:30px}.photo-overlay h2{font-size:2.5rem}
   .cta{padding:40px 25px}.footer-grid{grid-template-columns:1fr}.sticky-quote{right:14px;bottom:14px;padding:13px 16px}.back-top{right:15px;bottom:72px}
 }
-.unsplash-credit{position:absolute;right:18px;bottom:14px;z-index:3;font-size:.72rem;color:rgba(255,255,255,.78);text-shadow:0 1px 4px rgba(0,0,0,.5)}.unsplash-credit a{color:inherit;text-decoration:underline}</style>
+.unsplash-credit{position:absolute;right:18px;bottom:14px;z-index:3;font-size:.72rem;color:rgba(255,255,255,.78);text-shadow:0 1px 4px rgba(0,0,0,.5)}.unsplash-credit a{color:inherit;text-decoration:underline}
+/* Premium Alberta / Rockies motion layer */
+.hero{background-position:center calc(50% + var(--hero-shift,0px));background-size:cover;transition:background-position .08s linear}.hero:before{content:"";position:absolute;inset:-4%;z-index:0;background:inherit;transform:scale(1.035);filter:saturate(1.06) contrast(1.02);animation:heroBreath 16s ease-in-out infinite alternate;pointer-events:none}.hero:after{z-index:1}.hero-content,.hero-scroll{z-index:2}@keyframes heroBreath{from{transform:scale(1.035)}to{transform:scale(1.075) translate3d(0,-.4%,0)}}.hero-content .kicker{animation:fadeUp .8s .08s both}.hero-content h1{animation:fadeUp .9s .18s both}.hero-content p{animation:fadeUp .9s .3s both}.hero-content .hero-meta{animation:fadeUp .9s .42s both}.hero-content .buttons{animation:fadeUp .9s .54s both}@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}.photo-card{isolation:isolate}.photo-card img{transform:scale(1.035);transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter 1.2s ease;filter:saturate(.98)}.photo-card:hover img{transform:scale(1.09);filter:saturate(1.08)}.photo-card:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,27,21,.02),rgba(7,27,21,.2))}.card,.service,.faq-item,.trust-item{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s ease,border-color .45s ease}.card:hover,.service:hover{transform:translateY(-8px);box-shadow:0 22px 55px rgba(7,35,27,.13)}.trust-item:hover{transform:translateY(-3px)}.reveal{opacity:0;transform:translateY(42px) scale(.985);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:none}.reveal.delay-1{transition-delay:.08s}.reveal.delay-2{transition-delay:.16s}.reveal.delay-3{transition-delay:.24s}@media (prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.hero{background-position:center!important}.reveal{opacity:1!important;transform:none!important}}
+
+/* ===== SmartServe Dark Mode ===== */
+body.dark-mode{
+  --cream:#0b1713;--white:#101f1a;--ink:#edf3ef;--muted:#b4c3bc;
+  --line:#294239;--shadow:0 24px 70px rgba(0,0,0,.34);
+  background:#0b1713;color:var(--ink);
+}
+body.dark-mode .nav.scrolled{background:rgba(11,23,19,.88);box-shadow:0 10px 35px rgba(0,0,0,.35)}
+body.dark-mode .scrolled .nav-links{color:#f3f7f4}
+body.dark-mode .scrolled .lang button{background:#17382d;color:#f3f7f4;border-color:#315448}
+body.dark-mode .theme-toggle{background:rgba(255,255,255,.10);color:#fff;border-color:rgba(255,255,255,.20)}
+body.dark-mode .trust,body.dark-mode .reviews,body.dark-mode .faq{background:#101f1a;border-color:#294239}
+body.dark-mode .card,body.dark-mode .step,body.dark-mode .list,body.dark-mode .form{background:#13261f;color:var(--ink);border-color:#294239}
+body.dark-mode .review{background:#0e1d18;border-color:#294239}
+body.dark-mode .areas{background:#0f211a}
+body.dark-mode .area-pill{background:#17382d;color:#eaf3ee}
+body.dark-mode .faq-q{color:#edf3ef}
+body.dark-mode input,body.dark-mode select,body.dark-mode textarea{background:#0d1c17;color:#edf3ef;border-color:#315448}
+body.dark-mode input::placeholder,body.dark-mode textarea::placeholder{color:#8fa49a}
+body.dark-mode .mobile-menu{background:rgba(11,23,19,.97);color:#edf3ef}
+body.dark-mode .mobile-menu a{color:#edf3ef}
+body.dark-mode .section-head p{color:#b4c3bc}
+body.dark-mode .trust-item{color:#d9e8e1;border-color:#294239}
+body.dark-mode .eyebrow{color:#76b69a}
+body.dark-mode footer{background:#06110d}
+body.dark-mode .footer-link,body.dark-mode footer a{color:#dbe7e1}
+body.dark-mode .theme-toggle:hover{transform:translateY(-2px)}
+.theme-toggle{
+  width:39px;height:39px;display:inline-flex;align-items:center;justify-content:center;
+  border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.12);
+  color:#fff;border-radius:50%;cursor:pointer;font-size:17px;line-height:1;
+  transition:.3s var(--ease);flex:0 0 auto;
+}
+.scrolled .theme-toggle{background:#e8e3d7;color:var(--green);border-color:transparent}
+.theme-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+</style>
 
 <script type="application/ld+json">
 {
@@ -244,6 +282,7 @@ footer{background:#0b241c;color:#dbe5df;padding:55px 0 25px}
       <a href="#contact" data-i18n="navContact">Contact</a>
     </div>
     <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Dark mode">☾</button>
       <div class="lang" aria-label="Language">
         <button class="active" type="button" onclick="setLang('en')">🇨🇦</button>
         <button type="button" onclick="setLang('fr')">🇫🇷</button>
@@ -263,6 +302,7 @@ footer{background:#0b241c;color:#dbe5df;padding:55px 0 25px}
   <a href="#faq" data-i18n="navFaq">FAQ</a>
   <a href="#contact" data-i18n="navContact">Contact</a>
   <a class="btn btn-green" href="#contact" data-i18n="quote">Get a Quote</a>
+  <button class="theme-toggle mobile-theme-toggle" id="mobileThemeToggle" type="button" aria-label="Toggle dark mode" title="Dark mode">☾</button>
 </div>
 
 <header class="hero">
@@ -390,7 +430,7 @@ footer{background:#0b241c;color:#dbe5df;padding:55px 0 25px}
         <div class="feature-content"><div class="eyebrow" style="color:#f2cf73" data-i18n="propertyProgram">Property-wide programs</div><h3 data-i18n="propertyProgramTitle">Built for managers.</h3><p data-i18n="propertyProgramText">Unit-by-unit treatments, common-area inspections, rodent monitoring and recurring service.</p></div>
       </div>
       <div class="feature reveal reveal-delay-1">
-        <img src="https://unsplash.com/photos/tVRloZUKuVI/download?force=true" alt="Residential property" loading="lazy">
+        <img src="https://unsplash.com/photos/wupJ9wHfNEc/download?force=true" alt="Residential property" loading="lazy">
         <div class="feature-content"><div class="eyebrow" style="color:#f2cf73" data-i18n="residentProgram">Resident-focused service</div><h3 data-i18n="residentProgramTitle">Clear next steps.</h3><p data-i18n="residentProgramText">Inspection, treatment, prevention recommendations and follow-up requirements can be documented clearly.</p></div>
       </div>
     </div>
@@ -697,5 +737,34 @@ document.getElementById("quoteForm").addEventListener("submit",async function(e)
   }
 });
 </script>
-</body>
+
+<script>
+/* SmartServe Dark Mode */
+(()=>{
+  const body=document.body;
+  const buttons=[document.getElementById("themeToggle"),document.getElementById("mobileThemeToggle")].filter(Boolean);
+  let saved=null;
+  try{saved=localStorage.getItem("smartserveTheme")}catch(e){}
+  if(saved==="dark") body.classList.add("dark-mode");
+
+  const update=()=>{
+    const dark=body.classList.contains("dark-mode");
+    buttons.forEach(btn=>{
+      btn.textContent=dark?"☀":"☾";
+      btn.setAttribute("aria-label",dark?"Switch to light mode":"Switch to dark mode");
+      btn.setAttribute("title",dark?"Light mode":"Dark mode");
+    });
+    const meta=document.querySelector('meta[name="theme-color"]');
+    if(meta) meta.setAttribute("content",dark?"#0b1713":"#173f32");
+  };
+
+  buttons.forEach(btn=>btn.addEventListener("click",()=>{
+    body.classList.toggle("dark-mode");
+    try{localStorage.setItem("smartserveTheme",body.classList.contains("dark-mode")?"dark":"light")}catch(e){}
+    update();
+  }));
+  update();
+})();
+</script>
+<script>/* Subtle Apple-style Rockies parallax */(()=>{const hero=document.querySelector('.hero');if(!hero||matchMedia('(prefers-reduced-motion: reduce)').matches)return;let ticking=false;const update=()=>{const y=Math.min(window.scrollY,900);hero.style.setProperty('--hero-shift',`${y*.12}px`);ticking=false};window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true}},{passive:true});update()})();</script></body>
 </html>
